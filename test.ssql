@@ -1,0 +1,6 @@
+GENERATE HTML 
+{ 
+[m.title@{width=550, border=0, font-size=25, height=100}! {image(image, './img'), {'作品紹介'@{border=0, height=50}! m.abst@{width=350, height=230, border=0}}}! 'レビュー'@{height=40, font-size=20, border=0, margin-left=0, margin=10}! [image(rank || '.png', './img'), r.comment@{border=0, width=500}]!]! 
+} 
+FROM movie m,review r 
+WHERE m.id=r.m_id ;
