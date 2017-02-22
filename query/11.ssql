@@ -1,0 +1,3 @@
+GENERATE VR
+	[color,[name]%3,2!]! 
+FROM  basic; 
